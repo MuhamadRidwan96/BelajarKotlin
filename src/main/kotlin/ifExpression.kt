@@ -1,10 +1,13 @@
 fun main() {
-    val exam = 67
-    val attendant = 60
+    val exam =80
 
-    if (exam>= 68 && attendant >=60){
-        println("anda lulus exam")
+    if (exam > 90){
+        println("awesome")
+    } else if (exam>80) {
+        println("cool")
+    } else if (exam>68){
+        println("not bad")
     } else{
-        println("anda tidak lulus exam")
+        println("your not pass the exam")
     }
 }
