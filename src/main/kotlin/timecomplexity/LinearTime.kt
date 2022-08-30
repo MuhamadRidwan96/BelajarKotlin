@@ -1,4 +1,4 @@
-package app
+package timecomplexity
 
 fun main() {
     val names = listOf("dani","muhamad","musa")

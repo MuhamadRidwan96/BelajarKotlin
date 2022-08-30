@@ -1,4 +1,4 @@
-package app
+package timecomplexity
 
 fun main() {
     fun multipleNumber(size:Int){
