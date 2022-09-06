@@ -55,7 +55,7 @@ fun main() {
             // 4
             var currentValue = numbers.maxOrNull()!!
             for (value in numbers) {
-                if (value < currentValue && value > minValue) {
+                if (value in (minValue + 1) until currentValue) {
                     currentValue = value
                 }
             }

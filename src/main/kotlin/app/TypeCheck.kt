@@ -5,7 +5,7 @@ import data.Laptop
 import data.SmartWatch
 
 fun printObject(any: Any){
-    if (any is Laptop){
+    if  (any is Laptop){
         println("Laptop with name ${any.name}")
     } else if (any is Handphone){
         println("Laptop with name ${any.name}")
