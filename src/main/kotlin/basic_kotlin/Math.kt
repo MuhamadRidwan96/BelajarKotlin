@@ -1,38 +1,42 @@
 package basic_kotlin
 
 fun main() {
-//    val result = 10.0 / 3.0
-//    println(result)
-
     val result2: Double = 10.0 / 3.0
-    println(result2)
-
     val result3: Int = 2 + 3
-    println(result3)
-
     val result4: Int= 2 - 2
-    println(result4)
-
     val result5: Int = 2 * 2
-    println(result5)
 
+    //function
+    fun sum(a:Int,b:Int) :Int{
+        return a + b
+    }
+    //function expression
+    fun min(a:Int,b:Int)= a-b
+
+    val sick = true
+
+    println(!sick)
+    println("the output is ${sum(2,4)}")
+    println("the output function expression is ${min(5,2)}")
+    println(result2)
+    println(result3)
+    println(result4)
+    println(result5)
     val barang1 = 100
    // result3 += barang1
 
     val barang2 = 50
-    //result3 += barang2
+    //result3 *= bar
+    // ang2
 
     val barang3 = 20
-  //  result3 += barang3
+  //  result3 -= barang3
 
 //    println(result3)
 //   // result3++
 //    println(result3)
 //   // result3--
 //    println(result3)
-
-    val sakit = true
-    println(!sakit)
 
     /*
     Augmented Assignment
