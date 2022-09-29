@@ -11,7 +11,7 @@ fun main() {
     var alphabet = 'A'
 
     for (i in 1..rows) {
-        for (j in 1..i) {
+        for (j in 1..rows-i) {
             print("* ")
         }
         println()
@@ -26,7 +26,7 @@ fun main() {
 
     }
 
-    for(a in 1..last - 'A'+1){
+    for(a in last - 'A'+1 downTo 1){
         for (b in 1..a){
             print("$alphabet ")
         }
@@ -34,6 +34,16 @@ fun main() {
 
         println()
     }
+
+    for(c in 1..last - 'A'+1){
+        for (d in c downTo 1){
+            print("$alphabet ")
+        }
+        ++alphabet
+        println()
+    }
+
+
 
 
     println(three)
