@@ -20,4 +20,14 @@ fun main() {
         println()
         k = 0
     }
+
+
+    for (x in rows downTo 1){
+        for(space in 1 .. rows -x){
+            print("  ")
+        }
+
+    }
+
 }
+

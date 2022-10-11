@@ -1,7 +1,7 @@
 package basic_kotlin
 
 fun main() {
-    val exam =80
+    val exam =81
 
     if (exam > 90){
         println("awesome")
@@ -12,4 +12,9 @@ fun main() {
     } else{
         println("your not pass the exam")
     }
+
+
+    fun exact(level:Int, point:Int) = if(point<level) println("gagal") else println("lulus")
+
+    println(exact(90,60))
 }

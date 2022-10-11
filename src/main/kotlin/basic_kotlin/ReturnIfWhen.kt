@@ -1,19 +1,25 @@
+
 package basic_kotlin
 
 fun main() {
-    fun Hello(name:String=""):String{
-      /*  return if (name==""){
+    fun hello(name:String=""):String {
+        return if (name == "") {
             "Hello Bro!"
-        }else {
+        } else {
             "Hello $name"
-        }*/
-
-        return when(name){
-            "" -> "hello bro!"
-            else -> "hello $name"
         }
-    }
 
-    println(Hello())
-    println(Hello("dani"))
+    }
+    fun hello1(name:String =""):String{
+    return when(name){
+        "" -> "hello bro!"
+        else -> "hello $name"
+    }
+}
+
+
+
+    println(hello())
+    println(hello("dani"))
+    println(hello1("Ram"))
 }
