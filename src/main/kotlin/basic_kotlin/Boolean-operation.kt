@@ -13,6 +13,10 @@ fun main() {
     *  false || false == false
     * */
 
+    if (true is Boolean){
+        println("yes,true is boolean value")
+    }
+
     val finalExam = 50
     val attendant = 75
 
