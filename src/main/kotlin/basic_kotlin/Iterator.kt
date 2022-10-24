@@ -11,12 +11,21 @@ fun main() {
         println("item as $fruit is ${fruits[fruit]}")
     }
 
-    val range = 1..100
-    for (ranges in range){
-        println(ranges)
+    //fibonacci
+
+    val n = 10
+    var t1 = 0
+    var t2 = 1
+
+    print("first $n : ")
+    for (i in 1..n){
+        print("$t1 + ")
+        val sum = t1 + t2
+        t1 = t2
+        t2 = sum
     }
 
-    for(ranges in 100 downTo 1 step 5){
+    for(ranges in 100 downTo 1 step 15){
         println(ranges)
     }
 
@@ -28,11 +37,6 @@ fun main() {
     while(ind < fruits.size){
         println("item $ind is ${fruits[ind]}")
     ++ind
-    }
-    var indx = 0
-    while(indx < names.size){
-        println(names)
-        ++indx
     }
 
 }

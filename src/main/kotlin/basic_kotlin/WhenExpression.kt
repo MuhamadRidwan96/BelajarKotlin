@@ -49,4 +49,14 @@ fun main() {
         nilai > 68 -> println("not bad")
         else-> println("coba lagi")
     }
+
+    fun isOdd(x:Int) = x % 2 != 0
+    fun isEven(x:Int) = x % 2 == 0
+    print("Enter the number : ")
+    val num = readLine()!!.toInt()
+    when{
+        isOdd(num) -> print("Odd")
+        isEven(num) -> print("Even")
+        else -> print("Neither Even and Odd")
+    }
 }
