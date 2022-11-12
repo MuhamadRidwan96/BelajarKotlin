@@ -38,5 +38,14 @@ fun main() {
         println("item $ind is ${fruits[ind]}")
     ++ind
     }
+    print("please insert value: ")
+    val input = readLine()!!
+    var intValue:Int = input.toInt()
+    do{
+        intValue--
+        println(intValue)
+    } while(intValue > 0)
 
 }
+
+

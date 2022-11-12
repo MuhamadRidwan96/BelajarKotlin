@@ -16,4 +16,17 @@ fun main() {
     println(members[0])
 
 
+    val planets:Array<String> = arrayOf("earth","venus","mars","moon")
+    
+    for (i in planets.withIndex())     {
+
+    }
+
+    //FOREACH
+    planets.forEach { index -> println(index) }
+    //Lambda Expression
+    val arrayName = Array(5) { i -> i * 3 }
+    for(element in arrayName) {
+        println(element)
+    }
 }
