@@ -1,10 +1,10 @@
-package basic_kotlin
+package function
 
 fun main() {
-    fun recrusive(value : Int): Int{
+    fun recursive(value : Int): Int{
          return when(value){
              1->1
-             else->value*recrusive(value-1)
+             else->value*recursive(value-1)
          }
     }
 
@@ -15,6 +15,6 @@ fun main() {
         }
     }
 
-   println(recrusive(5))
+   println(recursive(5))
     println(factorial(25))
 }
