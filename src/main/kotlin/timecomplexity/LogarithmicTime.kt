@@ -88,6 +88,6 @@ the currentCount according to the number of print statements made.
 and stores it in currentValue .
 5. The algorithm then prints all values of currentValue inside the array while
 updating currentCount .
-6. minValue is set to currentValue , so the next iteration will try to find the next
+6. minValue is set to currentValue , so the next iteration will try to function.getFind the next
 minimum value.
 */
