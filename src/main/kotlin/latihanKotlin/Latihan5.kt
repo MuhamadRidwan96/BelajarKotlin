@@ -1,28 +1,36 @@
-package latihanKotlin
+    package latihanKotlin
 
 fun main() {
-    println(arr1(0))
-    println(arr2())
-    println(arr3())
+    println(unlabelledWithFor(0))
+    println()
+    println(unlabelledWithWhile())
+    println()
+    println(unlabelledWihtDoWhile())
+    println()
+    println(labelledWithFor())
+    println()
+    println(labelledWithWhile())
+    println()
+    println(labelledWithDoWhile())
 }
 
-fun arr2(){
+fun unlabelledWithWhile(){
     val arr = arrayOf("earth","mars","moon","jupiter","saturn")
     var i = 0
     while (i <= arr.size){
-        println("the name of planet "+ arr[i])
+        println("the name of $i is the planet "+ arr[i])
         if (arr[i]=="jupiter")
             break
         i++
     }
 }
 
-fun arr3(){
+fun unlabelledWihtDoWhile(){
     val arr = arrayOf("earth","mars","moon","jupiter","saturn")
     var i = 0
 
     do {
-        println("the name of planet "+ arr[i])
+        println("the name of $i is the planet "+ arr[i])
         if (arr[i]=="mars") {
             break
         }
@@ -30,7 +38,7 @@ fun arr3(){
     }while (i <= arr.size)
 }
 
-fun arr1(i:Int):String{
+fun unlabelledWithFor(i:Int):String{
     val arr = arrayOf("earth","mars","moon","jupiter","saturn")
 
     for (i in arr.indices){
@@ -38,6 +46,22 @@ fun arr1(i:Int):String{
             break
         }
     }
-    return "the name of planet "+ arr[i]
+    return "the name of $i is the planet "+ arr[i]
 }
+    fun labelledWithFor(){
+      outer2@for(i in 4 downTo 1){
+          inner@for(j in 1..i){
+              if (i == 2)
+                  break@outer2
+              println("variable $i and $j")
+          }
+      }
 
+    }
+    fun labelledWithWhile(){
+        val arr = arrayOf("earth","mars","moon","jupiter","saturn")
+    }
+
+    fun labelledWithDoWhile(){
+        val arr = arrayOf("earth","mars","moon","jupiter","saturn")
+    }
