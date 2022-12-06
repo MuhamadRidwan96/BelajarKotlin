@@ -25,8 +25,8 @@ fun hello(firstName: String,lastName: String?=null){
     }
 }
 /*Function Named Argument*/
-fun fullName(firstName: String, midleName:String, lastName: String){
-    println("hello $firstName $midleName $lastName")
+fun fullName(firstName: String, middleName:String, lastName: String){
+    println("hello $firstName $middleName $lastName")
 }
 
 /*Unit Returning function*/
@@ -52,8 +52,6 @@ fun div(a:Int, b: Int): Int{
 /*Single expression function*/
 fun double(a:Int):Int = a*2
 
-
-
 fun main() {
     helloWorld()
     additional(2,5)
@@ -64,7 +62,7 @@ fun main() {
     fullName(
         lastName = "Ramdani",
         firstName = "Muhamad",
-        midleName = "Ridwan"
+        middleName = "Ridwan"
     )
     val res = sum(10,9)
     println(res)

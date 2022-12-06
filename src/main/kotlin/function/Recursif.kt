@@ -8,7 +8,7 @@ fun fact(a:Int):Long{
 //recursive with when condition
 fun factorial(b:Int):Long{
     return when(b){
-        1->1
+        1->1 
        else->b* factorial(b-1)
     }
 }

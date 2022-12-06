@@ -1,6 +1,5 @@
 package function
-
-inline fun higherFunction(str:String,myCall:(String) ->Unit){
+ inline fun higherFunction(str:String,myCall:(String) ->Unit){
     myCall(str)
 }
 
