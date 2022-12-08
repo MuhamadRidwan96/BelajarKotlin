@@ -19,7 +19,7 @@ fun main() {
     val planets:Array<String> = arrayOf("earth","venus","mars","moon")
     
     for (i in planets.withIndex())     {
-
+        println("$i ")
     }
 
     //FOREACH
